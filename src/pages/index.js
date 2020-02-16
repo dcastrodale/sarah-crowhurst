@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from '../components/Layout';
-import Lockup from '../components/Lockup';
+import Layout from '../components/layout';
+import Lockup from '../components/lockup';
 import SEO from "../components/seo"
 
 const IndexPage = () => (
