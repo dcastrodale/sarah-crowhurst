@@ -1,0 +1,27 @@
+@import '../../styles/main';
+
+.editorial {
+  color: #FFF;
+  font-family: $pt-sans;
+  padding: 30px 10vw;
+  background-image: url("../../images/thomas-verbruggen-OIVuAKXW9VA-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+
+  &--theme-white {
+    background-color: #FFF;
+    color: #333;
+  }
+
+  &--theme-pink {
+    background-color: $pink;
+    color: #FFF;
+  }
+
+  p {
+    font-size: 28px;
+    // letter-spacing: 1px;
+    font-weight: 100;
+  }
+}

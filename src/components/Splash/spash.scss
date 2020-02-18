@@ -1,0 +1,17 @@
+@import '../../styles/main';
+
+.splash {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: $color-darkest;
+  &.theme-default {
+    color: #FFF;
+    background-color: $color-mid;
+  }
+
+  &.theme-white {
+    background-color: #FFF;
+    color: #333;
+  }
+}
