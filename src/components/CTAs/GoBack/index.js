@@ -6,7 +6,7 @@ const handleGoBack = event => {
   window.history.back();
 }
 export default () => {
-  return window.history ?
+  return (window && window.history) ?
     (
       <div className="go-back cta cta--dark">
         <a
