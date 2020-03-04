@@ -1,2 +1,8 @@
 import React from 'react';
-import './panels.scss';
+import './panel.scss';
+
+export default ({ children, theme }) => (
+  <div className={`panel panel--theme-${theme}`}>
+    {children}
+  </div>
+);

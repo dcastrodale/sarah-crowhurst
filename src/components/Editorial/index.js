@@ -2,10 +2,10 @@ import React from 'react';
 
 import './editorial.scss';
 
-export default ({children, theme="white"}) => {
+export default ({ children, theme="white", layout="default" }) => {
   return (
     <div
-      className={`editorial editorial--theme-${theme}`}
+      className={`editorial editorial--theme-${theme} editorial--layout-${layout}`}
     >
       {children}
     </div>

@@ -4,10 +4,10 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-color: $color-darkest;
+  background-color: $green;
   &.theme-default {
     color: #FFF;
-    background-color: $color-mid;
+    background-color: $grey-green;
   }
 
   &.theme-white {

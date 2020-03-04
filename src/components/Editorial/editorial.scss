@@ -1,27 +1,48 @@
 @import '../../styles/main';
 
 .editorial {
-  color: #FFF;
-  font-family: $pt-sans;
+  color: $grey-green;
+  font-family: $raleway;
   padding: 30px 10vw;
-  background-image: url("../../images/thomas-verbruggen-OIVuAKXW9VA-unsplash.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
+  text-align: left;
 
   &--theme-white {
-    background-color: #FFF;
-    color: #333;
+    background-color: $grey-green;
+    color: $grey;
   }
 
-  &--theme-pink {
-    background-color: $pink;
-    color: #FFF;
+  &--theme-dark {
+    background-color: $green;
+    color: $grey-green;
+  }
+
+  &--theme-leaves {
+    background-image: url("../../images/bg-image-optimized-min.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: $grey-green;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      z-index: -1;
+      background-color: rgba(0,0,0,0.5);
+      left: 0; top: 0; right: 0; bottom: 0;
+      display: block;
+    }
   }
 
   p {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 36px;
     // letter-spacing: 1px;
     font-weight: 100;
+  }
+
+  // Layouts
+  &--layout-fullscreen {
+    min-height: 100vh;
   }
 }

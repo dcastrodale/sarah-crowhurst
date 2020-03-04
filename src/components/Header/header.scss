@@ -1,0 +1,30 @@
+@import '../../styles/main';
+
+.header {
+  background-color: $green;
+  height: $header_height;
+  position: relative;
+  margin-bottom: 0;
+
+  &__title {
+    color: #FFF;
+    position: absolute;
+    left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $raleway;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  &__subtitle {
+    color: $grey-green;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 200px;
+    padding-left: 10px;
+  }
+}

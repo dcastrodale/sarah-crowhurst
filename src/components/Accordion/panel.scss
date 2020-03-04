@@ -1,0 +1,17 @@
+@import '../../styles/main';
+
+.panel {
+  @include respond-to('desktop') {
+    flex-basis: 33.3333%;
+  }
+  @include respond-to('device') {
+    flex-basis: 100%;
+  }
+
+  align-content: center;
+  font-family: $lato;
+
+  h3 {
+    height: 44px;
+  }
+}

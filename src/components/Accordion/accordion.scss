@@ -1,0 +1,14 @@
+@import '../../styles/main';
+
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @include respond-to('desktop') {
+    padding: 60px 10%;
+  }
+  @include respond-to('device') {
+    padding: 20px;
+  }
+}
