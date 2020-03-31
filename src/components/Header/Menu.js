@@ -13,10 +13,16 @@ export default class Menu extends Component {
     this.handleMenuToggle = this.handleMenuToggle.bind(this);
   }
 
+  componentDidMount() {
+    document.querySelector('body').style.overflow = this.state.menuOpen ? 'hidden' : 'auto';
+  }
+
   handleMenuToggle() {
-    console.log()
     this.setState({
       menuOpen: !this.state.menuOpen
+    }, () => {
+      // Toggle overflow lock on html elements
+      document.querySelector('body').style.overflow = this.state.menuOpen ? 'hidden' : 'auto';
     })
   }
 
