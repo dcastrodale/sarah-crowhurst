@@ -24,6 +24,12 @@
     position: relative;
     z-index: 1;
 
+    @include respond-to('device') {
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
     &::before {
       content: ' ';
       position: absolute;
