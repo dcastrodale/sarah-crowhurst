@@ -3,15 +3,29 @@
 .panel {
   @include respond-to('desktop') {
     flex-basis: 33.3333%;
+    padding: 0 30px;
   }
   @include respond-to('device') {
     flex-basis: 100%;
+    padding: 30px 20px;
+
+    &:first-child {
+      padding-top: 60px;
+    }
+
+    &:last-child {
+      padding-bottom: 60px;
+    }
+  }
+  text-align: center;
+
+  &__icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
   }
 
   align-content: center;
   font-family: $lato;
-
-  h3 {
-    height: 44px;
-  }
 }

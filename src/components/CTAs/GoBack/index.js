@@ -28,12 +28,12 @@ export default class GoBack extends Component {
     return this.state.historyAvailable ?
       (
         <div className="go-back cta cta--dark">
-          <a
+          <button
             href="#"
             onClick={event => handleGoBack(event)}
           >
             &lt; Go back
-        </a>
+          </button>
         </div>
       ) :
       null;

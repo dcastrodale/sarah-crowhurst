@@ -9,6 +9,6 @@
     padding: 60px 10%;
   }
   @include respond-to('device') {
-    padding: 20px;
+    padding: 0 20px;
   }
 }
